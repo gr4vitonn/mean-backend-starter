@@ -3,9 +3,9 @@ import {
 } from 'inversify-express-utils';
 import { inject } from 'inversify';
 import { Request } from 'express';
+import TYPES from '../constant/types';
 import { User } from '../models/user';
 import { UserService } from '../service/user';
-import TYPES from '../constant/types';
 
 @controller('/user')
 export class UserController {

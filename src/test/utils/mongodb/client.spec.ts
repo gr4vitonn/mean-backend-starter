@@ -1,7 +1,7 @@
 import { Db, MongoClient, ObjectID } from 'mongodb';
 import { expect } from 'chai';
-import { MongoDBClient } from '../../../utils/mongodb/client';
 import { User } from '../../../models/user';
+import { MongoDBClient } from '../../../utils/mongodb/client';
 
 const connStr = 'mongodb://localhost:27017';
 const dbName = "inversify-express-example";
