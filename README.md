@@ -3,7 +3,7 @@
 First of all run `npm install`
 
 ```
-$ npm install -g ts-node
+$ npm install -g ts-node typescript
 $ npm run serve
 ```
 This will start up the server and you can use the example
