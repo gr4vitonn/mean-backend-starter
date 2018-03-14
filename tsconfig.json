@@ -11,10 +11,14 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "moduleResolution": "node",
-        "noUnusedLocals": true
+        "noUnusedLocals": true,
+        "outDir": "dist"
     },
     "compileOnSave": false,
     "exclude": [
       "node_modules"
+    ],
+    "include": [
+      "src/**/*.ts"
     ]
 }

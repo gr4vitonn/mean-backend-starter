@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import { UserController } from '../../controller/user';
-import { UserService } from '../../service/user';
+import { UserController } from '../../src/controller/user';
+import { UserService } from '../../src/service/user';
 
 class MongoDBClientMock {
   public db;

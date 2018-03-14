@@ -4,11 +4,11 @@ import { Container } from 'inversify';
 import { makeLoggerMiddleware } from 'inversify-logger-middleware';
 import * as bodyParser from 'body-parser';
 import * as helmet from 'helmet';
-import './src/controller/home';
-import './src/controller/user';
-import TYPES from './src/constant/types';
-import { UserService } from './src/service/user';
-import { MongoDBClient } from './src/utils/mongodb/client';
+import './controller/home';
+import './controller/user';
+import TYPES from './constant/types';
+import { MongoDBClient } from './utils/mongodb/client';
+import { UserService } from './service/user';
 
 // load everything needed to the Container
 let container = new Container();
@@ -32,7 +32,7 @@ server.setConfig((app) => {
 });
 
 let app = server.build();
-app.listen(3223);
-console.log('Server started on port 3223 :)');
+app.listen(3224);
+console.log('Server started on port 3224 :)');
 
 exports = module.exports = app;

@@ -5,7 +5,8 @@
   "author": "lholznagel",
   "license": "MIT",
   "scripts": {
-    "serve": "ts-node bootstrap.ts",
+    "gulp-serve": "gulp build && node dist/bootstrap.js",
+    "serve": "ts-node src/bootstrap.ts",
     "test": "nyc --clean --all --require ts-node/register --require reflect-metadata/Reflect --extension .ts -- mocha --exit --timeout 5000",
     "test:all": "npm test **/*.spec.ts"
   },
@@ -27,6 +28,8 @@
     "@types/mocha": "2.2.48",
     "@types/mongodb": "3.0.7",
     "chai": "4.1.2",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^4.0.1",
     "mocha": "5.0.4",
     "nyc": "11.4.1",
     "ts-node": "5.0.1",
